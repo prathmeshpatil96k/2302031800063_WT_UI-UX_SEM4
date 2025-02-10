@@ -1,0 +1,16 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Text To Word</title></head><body><p>Steps to Create a Git Repository and Folders</p>
+<p>&nbsp;</p>
+<p>1. Open GitHub and log in.</p>
+<p>&nbsp;</p>
+<p>2. Create a new repository named as your enrollment number.</p>
+<p>&nbsp;</p>
+<p>3. Clone the repository using Git Bash or Command Prompt.</p>
+<p>&nbsp;</p>
+<p>4. Navigate to the repository folder on your local system.</p>
+<p>&nbsp;</p>
+<p>5. Create two folders named Assignment_1 and Assignment_2.</p>
+<p>&nbsp;</p>
+<p>6. Add the folders to Git, commit the changes, and push them to GitHub.</p>
+<p>&nbsp;</p>
+<p>7. Verify on GitHub that the folders are successfully uploaded.</p>
+<p>&nbsp;</p></body></html>
