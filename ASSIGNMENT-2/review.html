@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf9e1;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #1b3a2c;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4caf50;
+        }
+        .testimonials {
+            padding: 40px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #1b3a2c;
+        }
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .testimonial {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .testimonial:hover {
+            transform: scale(1.05);
+        }
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .role {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .stars {
+            color: gold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="chooseus.html">About</a>
+        <a href="#">Testimonials</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="c:\Users\GOUTAM\Downloads\john.jpeg" alt="Jane Doe">
+                <h3>Jane Doe</h3>
+                <p class="role">Food Blogger</p>
+                <p class="review">“This AI recipe generator has transformed my cooking! I love how it suggests meals based on what I already have.”</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="c:\Users\GOUTAM\Downloads\smith.jpeg" alt="John Smith">
+                <h3>John Smith</h3>
+                <p class="role">Home Chef</p>
+                <p class="review">“I never knew cooking could be this easy! The personalized recipes are a game changer.”</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="c:\Users\GOUTAM\Downloads\emily.jpeg" alt="Emily Johnson">
+                <h3>Emily Johnson</h3>
+                <p class="role">Nutritionist</p>
+                <p class="review">“The nutritional insights help me maintain a healthy diet while enjoying delicious meals.”</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

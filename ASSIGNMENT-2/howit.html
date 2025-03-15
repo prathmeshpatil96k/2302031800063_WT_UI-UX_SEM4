@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf9e1;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #1b3a2c;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s;
+        }
+        nav a::after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 0;
+            background: #4caf50;
+            transition: width 0.3s ease-in-out;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        nav a:hover {
+            color: #4caf50;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        .left-section {
+            text-align: center;
+            flex: 1;
+        }
+        .left-section img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        .left-section h2 {
+            font-size: 2em;
+            color: #1b3a2c;
+            height: 50px;
+        }
+        .right-section {
+            flex: 1;
+        }
+        .step {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+        .step:hover {
+            transform: scale(1.05);
+            background-color: rgba(76, 175, 80, 0.1);
+        }
+        .step h3 {
+            font-size: 1.2em;
+            color: #1b3a2c;
+        }
+        .step p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="chooseus.html">About</a>
+        <a href="#">How It Works</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="left-section">
+            <img src="c:\Users\GOUTAM\Downloads\how it.jpeg" alt="How It Works">
+            <h2>How It Works</h2>
+            <p>A simple process to elevate your cooking experience.</p>
+        </div>
+        <div class="right-section">
+            <div class="step">
+                <h3>Step 1: Sign Up</h3>
+                <p>Create an account to start your culinary adventure.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Input Preferences</h3>
+                <p>Tell us your dietary preferences and available ingredients.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Get Recipes</h3>
+                <p>Receive tailored recipe suggestions instantly.</p>
+            </div>
+            <div class="step">
+                <h3>Step 4: Cook & Enjoy</h3>
+                <p>Follow the recipe and savor your delicious creation.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

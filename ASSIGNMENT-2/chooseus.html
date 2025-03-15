@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8f1;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .title {
+            font-size: 2rem;
+            color: #2c3e50;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .image-container {
+            overflow: hidden;
+            border-radius: 10px;
+            animation: zoomIn 1.2s ease-in-out;
+        }
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 45%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .feature:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1 class="title">Why Choose Us?</h1>
+        <p class="subtitle">Your culinary journey begins here.</p>
+        <div class="image-container">
+            <img src="c:\Users\GOUTAM\Downloads\food.avif" alt="Delicious dish" class="image" height="45">
+        </div>
+        <div class="features">
+            <div class="feature">
+                <h3>Personalized Recipes</h3>
+                <p>Receive recipe suggestions based on your unique preferences and dietary needs.</p>
+            </div>
+            <div class="feature">
+                <h3>Ingredient-Based Suggestions</h3>
+                <p>Utilize what you have at home to create delicious meals without waste.</p>
+            </div>
+            <div class="feature">
+                <h3>Nutritional Insights</h3>
+                <p>Get detailed nutritional information for each recipe to maintain a balanced diet.</p>
+            </div>
+            <div class="feature">
+                <h3>Community Sharing</h3>
+                <p>Join a community of food lovers and share your favorite recipes and tips.</p>
+            </div>
+            <div class="feature">
+                <h3>User-Friendly Interface</h3>
+                <p>Easily navigate our platform to find recipes that suit your cooking style.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

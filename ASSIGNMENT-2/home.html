@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorAI - AI Recipe Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eaf9e1;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: transparent;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .navbar.scrolled {
+            background: rgba(27, 58, 44, 0.9);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1b3a2c;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #1b3a2c;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #4caf50;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 10px 70px;
+            border: 2px solid #1b3a2c;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-primary {
+            background: #4caf50;
+            color: white;
+            border-color: #4caf50;
+        }
+
+        .btn-primary:hover {
+            background: #367c39;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #1b3a2c;
+        }
+
+        .btn-outline:hover {
+            background: #1b3a2c;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 80px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content {
+            flex: 1;
+            padding-right: 50px;
+            text-align: left;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            color: #1b3a2c;
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out forwards 0.5s;
+        }
+
+        @keyframes fadeInText {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* Image Animation */
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px;
+            }
+
+            .hero-content {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">FlavorAI</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="chooseus.html">About Us</a>
+            <a href="review.html">Our Team</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="login.html" class="btn btn-outline">Log In</a>
+            <a href="chooseus.html" class="btn btn-primary">Join Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Cook Smarter, Not Harder</h1>
+            <p>Discover personalized recipes tailored to your tastes and ingredients. Let our AI guide you to culinary success!</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Get Started Now</a>
+                <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="c:\Users\GOUTAM\Downloads\homepage.avif" alt="AI Cooking Assistant">
+        </div>
+    </div>
+
+    <script>
+        // Navbar Background Change on Scroll
+        window.addEventListener("scroll", function() {
+            let navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Revolution</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(135deg, #d4fc79, #96e6a1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        nav {
+            width: 100%;
+            background-color: #004d00;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #d4fc79;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right-section {
+            flex: 1;
+            background-color: #e0ffee;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 38px;
+            font-weight: 700;
+            color: #003d00;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #003d00;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #388E3C;
+        }
+        .feature {
+            margin-bottom: 20px;
+        }
+        .feature h3 {
+            color: #003d00;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .feature p {
+            color: #2e7d32;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="left-section">
+            <h1>Join the Flavor Revolution</h1>
+            <p>Experience the joy of cooking with personalized recipes tailored just for you.</p>
+            <a href="#" class="btn">Start Cooking Today</a>
+        </div>
+        <div class="right-section">
+            <div class="feature">
+                <h3>AI-Powered Suggestions</h3>
+                <p>Our AI analyzes your taste preferences and suggests the best recipes just for you.</p>
+            </div>
+            <div class="feature">
+                <h3>Waste Reduction</h3>
+                <p>Utilize your ingredients efficiently and cut down on food waste effortlessly.</p>
+            </div>
+            <div class="feature">
+                <h3>Culinary Community</h3>
+                <p>Engage with fellow food lovers, share your creations, and discover new flavors.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
